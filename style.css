@@ -1,0 +1,971 @@
+/* Importamos las fuentes de google */
+/* Repasar las que tengo ahora(igual se tienen que cambiar) */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Poppins:wght@400;500;600&display=swap');
+
+
+/* Reset CSS (Evitar que exista un overflow en la página) se utiliza ya una fuente predefinida para toda la página y un tamaño base*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Poppins; 
+    font-size:0.85 rem;
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+}
+
+html,body{
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    /* max-width: 400px; */
+    margin: 0 auto;
+    /* overflow: hidden; */
+    /* background-color: #ffefdb; */
+}
+
+ul{
+    list-style: none;
+}
+
+.boton{
+    padding:1rem 2rem;
+}
+
+
+.fa-cog:hover {
+        color: white;
+}
+
+/* Javascript elementos a formatear */
+.hidden{
+    opacity:0; 
+    transition: all 4s;
+}
+
+.show{
+    opacity:1;
+    transition: all 4s;
+}
+
+.mouseOff{
+    opacity:0; 
+    transition: all 4s;
+}
+
+.mouseOver{
+    opacity:1; 
+    transition:4s;
+    transform: 2px 4px;
+}
+
+#nuevoTexto{
+    position:absolute;
+    align-self: center;
+    top:50%;
+    right:15%;
+    max-width: 12rem;
+    background:linear-gradient(180deg,#252525,#383838,#504f4f); ;
+    border-radius:20px;
+    color:white; 
+    background-color: black;
+    padding:6px;
+    font-size: 0.75rem;
+    opacity:0.85;
+    text-align: center;
+}
+
+
+#nuevoTexto2{
+    position:absolute;
+    align-self: center;
+    top:30%;
+    right:60%;
+    max-width: 12rem;
+    background:linear-gradient(180deg,#252525,#383838,#504f4f); ;
+    border-radius:20px;
+    color:white; 
+    background-color: black;
+    padding:6px;
+    font-size: 0.75rem;
+    opacity:0.85;
+    text-align: center;
+}
+
+
+#mensajebienvenida{
+    position:absolute;
+    align-self: center;
+    top:10rem;
+    background:linear-gradient(180deg,#252525,#383838,#504f4f); ;
+    border-radius:20px;
+    color:white; 
+    background-color: black;
+    padding:5px;
+    font-size: 0.75rem;
+    opacity:0.75;
+}
+
+#mainPage-bg-item1{
+    position:absolute;
+    opacity:0.1;
+    top:35%; 
+    left:10%;
+}
+
+#mainPage-bg-item2{
+    position:absolute;
+    opacity:0.1;
+    top:35%; 
+    right:10%;
+}
+
+#mainPage-bg-item3{
+    position:absolute;
+    opacity:0.1;
+    top:70%;    
+    right:10%;
+}
+
+#mainPage-bg-item4{
+    position:absolute;
+    opacity:0.1;
+    top:15%;    
+    right:40%;
+    left:40%;
+    width:max-content;
+    height: max-content;
+    z-index: 0;
+}
+
+
+
+
+/* Elementos del header */
+#page-header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(180deg,#252525,#383838,#504f4f);
+    /* background-color: rgb(37, 37, 37); */
+    color:white;
+    /* border:1px solid black; */
+    /* min-width: 400px; se tiene que retocar para que en formato móvil aparezca cómo una hamburgesa */
+    /* min-height:15vh;
+    max-height:15vh; */
+    min-height:15vh;
+    
+}
+
+#page-header-title,  #header-img{
+    padding:20px;
+}
+
+#page-header-button-contactMe{
+    /* padding:8px; */
+    margin:0 1rem 0 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(40deg,#e62c5a50,#465ab550, #93d3fd50);
+    font-weight:700;
+    transition: 0.75s;
+}
+
+#page-header-button-contactMe:hover{
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    background-color: white;
+    background-image: none;
+
+}
+
+/* La pequeña sombra debajo el header -- borrada por el momento (uso un gradiente en el background del div principal */
+
+#page-header-shadow{
+    height:10px;
+    box-shadow:
+        inset 0 1px 1px 0px 
+        inset 0 1px 1px 0px #ccc,
+        inset 0 10px 4px 10px #fff;
+}
+
+/* El primer elemento (Elemento principal de la página) */
+
+.container{
+    padding:0;
+    margin:0;
+    /* min-width: 400px; */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#mainPage{
+    display: flex;
+    /* display:none; */
+    justify-content:space-around;
+    /* flex-direction: column; */
+    height: 85vh;
+    padding:0 20rem;
+
+    /* background-image: linear-gradient(); */
+    background: rgb(199,205,210);
+    background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);;
+}
+
+#mainPage-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mainPage-right{
+    padding:3rem;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+#mainPage-mainTitle{
+    font-weight: bolder;
+    font-family: Poppins;
+    font-size: 2rem;
+}
+
+#mainPage-description{
+    margin-top:1rem;
+}
+
+#mainPage-buttons{
+    margin-top:3rem;
+}
+
+#mainPage-buttons-btn1{
+    /* padding:8px; */
+    margin-right:1rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.75s;
+}
+
+#mainPage-buttons-btn1:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    background-image: linear-gradient(40deg,#e62c5a50,#465ab580, #93d3fd50);
+
+}
+
+#mainPage-buttons-btn2{
+    /* padding:8px; */
+    margin-left:1rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.75s;
+}
+
+#mainPage-buttons-btn2:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    background-image: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+}
+
+#mainPage-right-bg-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 11rem;
+    background-attachment:local;
+    background-repeat: no-repeat;
+    background-image: url(./assets/img/perfil190px.png);
+    overflow: hidden;
+    align-self: flex-start;
+    border:0.1px solid black;
+    border-radius:20px;
+    margin-bottom:20px;
+    transition: 400ms;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+
+}
+
+#mainPage-right-bg-img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    transition: 0.75s;
+}
+
+
+/* ABOUT ME SECTION */
+
+
+.quotePage{
+    min-height:30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background:black; */
+    background-image: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    border: 1px solid black;
+}
+
+#quotePage-intro{
+    font-size:20px;
+    padding:3rem;
+    color:black;
+}
+
+#resume-title-section{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 3rem 0;
+    background-image: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+}
+
+#quotePage-resume-btn{
+    padding:20px 45px; 
+    margin:4rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: 400ms;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.75s;
+}
+
+#quotePage-resume-btn:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    background-image: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+}
+
+#skills-title{
+    font-size:4rem;
+}
+
+.skills-text{
+    font-size: 1.25rem;
+
+}
+
+
+#skills-software2{
+    margin: 1rem;
+}
+/* Resume Page layout */
+
+#resumePage{
+    min-height:90vh;
+    padding:3rem;
+    background-image: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+}
+
+#resumePage-Title{
+    font-size:2rem;
+    align-self: center;
+}
+
+    /* La linea de la timeline (el container que la contiene) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+    /* La linea de la timeline (con este pseudoelemento Se le da formato a la timeline*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
+}
+
+    /* El container cuadrado en el cuñal se posiciona el contenido*/
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: white;
+  width: 50%;
+  z-index: 1;
+}
+
+    /* Los circulos que se posicionan encima el timeline*/
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #242424;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+    /* Las tarjetas a la izquierda */
+.left {
+  left: 0;
+}
+
+    /* Las tarjetas a la derecha*/
+.right {
+  left: 50%;
+}
+
+    /* Posicion absoluta de los circulos de la derecha de la timeline */
+.right::after {
+  left: -16px;
+  background-color: white;
+}
+
+    /* El contenido dentro de las tarjetasd de la timeline */
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  background-image:  linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+  position: relative;
+  border-radius: 6px;
+  transition: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+
+}
+
+.content:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.tarjeta:hover{
+    transform: rotateX(180deg);
+}
+
+
+
+
+/* Animación de trajetas de la timeline*/
+
+.timeline-container{
+    background-color: transparent;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.content:hover{
+    transform: rotateX(180deg);
+}
+
+/* Seccion título proyectos */
+
+#projects-title-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    background-image: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+}
+
+#pojects-container-title{
+    font-weight: bold;
+    font-size:2rem;
+}
+
+#projectsButton{
+    /* padding:8px; */
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: 0.75s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#projectsButton:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    background-image: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+
+}
+
+/* Proyectos personales */
+
+#projectsPage{
+    min-height: 100vh;
+    display:grid;
+    row-gap: 5vh;
+    column-gap: 5vh;
+    grid-template-columns: repeat(auto-fit,minmax(10vh,20vh));
+    grid-template-rows: repeat(2,35vh);
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 3vh;
+    padding-left:1rem;
+    padding-right:1rem;
+    background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+}
+
+.project-large1{
+    grid-row:1;
+    grid-column: 1/5;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(122, 120, 120);
+    background-image: url('./assets/img/projects3px.jpg'),linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+ 
+}
+
+.project-small1{
+    grid-row:1;
+    grid-column: 5/7;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('./assets/img/projects2px.jpg'), linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    background-repeat: repeat;
+    background-color: rgb(122, 120, 120);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+.project-small2{
+    background-color: rgb(122, 120, 120);
+    grid-row:2;
+    grid-column: 1/3;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('./assets/img/projects1px.jpg'), linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+.project-large2{
+    background-color: pink;
+    grid-row:2;
+    grid-column: 3/7;
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('./assets/img/projects5.jpg'),linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    background-repeat: no-repeat;
+    background-color: rgb(122, 120, 120);
+    background-blend-mode: multiply;
+}
+
+.project{
+    transition: 400ms;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    color:white;
+    
+}
+.project:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    cursor:pointer;
+    background: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    background-color: white;
+    color:black;
+    transition: 1s;
+}
+
+.project-title, .project-text{
+    margin:1rem;
+}
+
+
+/* Hoja de contacto */
+
+#contactPage{
+    display:grid;
+    min-height: 50vh;
+    display:grid;
+    row-gap: 5vh;
+    column-gap: 5vh;
+    grid-template-columns: repeat(auto-fit,minmax(10vh,20vh));
+    grid-template-rows: repeat(3,5vh);
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+
+}
+
+#contactPage-name{
+    grid-row: 1/1;
+    grid-column: 1/3;
+}
+
+#contactPage-asunto{
+    grid-row:2; 
+    grid-column: 1/3;
+}
+
+#contactPage-mail{
+    grid-row:3;
+    grid-column:1/3;
+}
+
+#contactPage-textarea{
+    grid-row:1/4;
+    grid-column: 3/6;
+
+}
+
+#contactPage-submit{
+    grid-row:4; 
+    grid-column:2/4;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: 0.75s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    }
+    
+#contactPage-submit:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translate(2px, 2px);
+    background-image: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    
+}
+
+#animacionResultado{
+    min-height: 50vh;
+    padding:10rem; 
+    background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+    background-image: url(./assets/img/tickverde.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Footer */
+footer{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height:10vh; 
+    margin-right:0; 
+    margin-left:0;
+    margin-top:auto;
+    margin-bottom:0;
+    border: 1px solid black;
+    background:linear-gradient(0deg,#252525,#383838,#504f4f);
+    overflow: hidden;
+}
+
+
+
+/* Responsive breakpoints */
+
+@media (max-width:1260px){
+    #mainPage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding:0 1rem;
+        width: 100%;
+        background-image: linear-gradient();
+        background: rgb(199,205,210);
+        background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);;
+    }
+
+    #mainPage-mainTitle{
+        align-self: center;
+    }
+    #mainPage-description{
+        align-self: center;
+    }
+
+    .project-small1 {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .project-large1{
+        grid-row:1;
+        grid-column: 3/7;
+    }
+
+    #nuevoTexto{
+        position:absolute;
+        align-self: center;
+        top:75%;
+        right:20%;
+        max-width: 12rem;
+        background:linear-gradient(180deg,#252525,#383838,#504f4f); ;
+        border-radius:20px;
+        color:white; 
+        background-color: black;
+        padding:6px;
+        font-size: 0.75rem;
+        opacity:0.85;
+        text-align: center;
+    }
+
+}
+
+
+@media all and (max-width: 1149px) {
+    #page-header{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+        align-items: center;
+        }
+    
+    #page-header-button-contactMe{
+        display:none;
+    }
+
+    #page-header-title, #header-img :hover{
+        cursor: pointer;
+    }
+
+    #mainPage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding:0 1rem;
+        width: 100%;
+        background-image: linear-gradient();
+        background: rgb(199,205,210);
+        background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #resumePage {
+        min-height: 90vh;
+        padding: 1rem 0 5rem 1rem;
+        background-image: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+    }
+
+    /* timelime posición absoluta */
+    .timeline::after {
+    left: 17px;
+    }
+    .timeline{
+        padding: 2rem 3rem 0 1rem;
+    }
+  
+    /* Containers */
+    .timeline-container {
+    width: 100%;
+    padding:10px 0px;
+    }
+
+    /* Circulos posición absoluta*/
+    .left::after, .right::after {
+    left: -15px;
+    top:-16px;
+    /* display: none; */
+    }
+    
+    /* Posicionar los elementos del timeline a la derecha*/
+    .right {
+    left: 0%;
+    }
+
+    #nuevoTexto{
+        position:absolute;
+        align-self: center;
+        top:90%;
+        right:34%;
+        max-width: 12rem;
+        background:linear-gradient(180deg,#252525,#383838,#504f4f); ;
+        border-radius:20px;
+        color:white; 
+        background-color: black;
+        padding:6px;
+        font-size: 0.75rem;
+        opacity:0.85;
+        text-align: center;
+    }
+    
+}
+
+
+@media all and (max-width: 640px) {
+    #page-header{
+        flex-direction: column;
+        display:flex;
+        margin:0;
+        padding:0;
+        align-items: center;
+        width:100%;
+        }
+    
+    #page-header-button-contactMe{
+        display:none;
+    }
+
+    #page-header-title, #header-img :hover{
+        cursor: pointer;
+    }
+
+    #mainPage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        padding: 0rem 1rem 0rem 0;
+        background-image: linear-gradient();
+        background: rgb(199,205,210);
+        background: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);;
+    }
+
+
+    #mainPage-buttons-btn1{
+        /* padding:8px; */
+        margin: 0;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: bolder;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+        transition: 0.3s;
+    }
+    
+    #mainPage-buttons-btn1:hover{
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        transform: translate(2px, 2px);
+        background-image: linear-gradient(40deg,#e62c5a50,#465ab580, #93d3fd50);
+    
+    }
+    
+    #mainPage-buttons-btn2{
+        /* padding:8px; */
+        margin: 0;
+        border-radius: 10px;
+        font-weight: bolder;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+        transition: 0.3s;
+    }
+    
+    #mainPage-buttons-btn2:hover{
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        transform: translate(2px, 2px);
+        background-image: linear-gradient(40deg,#e62c5a80,#465ab580, #93d3fd80);
+    }
+
+    #projectsPage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #resume-title-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+    background-image: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+    }
+    
+
+}
+
+@media (max-width:500px) {
+
+    #projects-title-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        background-image: linear-gradient(0deg, rgba(242,249,255,1) 0%, rgba(255,255,255,1) 87%, rgba(242,249,255,1) 100%);
+    }
+
+    #projectsButton {
+        margin: 1rem;
+        border-radius: 10px;
+        font-weight: bolder;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        background-color: rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+        transition: 400ms;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%);
+    }
+
+    #skills-title{
+        font-size: 2rem;
+    }
+
+    .skills-text{
+        font-size: 0.75rem;
+
+    }
+    #nuevoTexto{
+        position:absolute;
+        align-self: center;
+        top:90%;
+        right:29%;
+        max-width: 12rem;
+        background:linear-gradient(180deg,#252525,#383838,#504f4f); ;
+        border-radius:20px;
+        color:white; 
+        background-color: black;
+        padding:6px;
+        font-size: 0.75rem;
+        opacity:0.85;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,91 @@
+#Fuentes de colores 
+https://cssgradient.io/
+https://colorhunt.co/
+https://mycolor.space/?hex=%23E62C5A&sub=1
+https://www.color-hex.com/
+
+#Fuentes para tipografía 
+https://fonts.google.com/
+
+#Fuentes de iconos
+https://fontawesome.com/
+https://fontawesome.com/docs/web/style/animate
+https://fontawesome.com/kits/a1e2390cbb/setup
+
+#Screen breakpoints
+https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+
+#Tutoriales leídos
+https://www.w3schools.com/html/html_forms.asp
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll
+https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card
+https://www.w3schools.com/howto/howto_css_timeline.asp
+https://www.w3schools.com/howto/howto_css_cards.asp
+https://www.w3schools.com/cssref/sel_hover.php
+https://www.w3schools.com/html/html_layout.asp
+https://www.w3schools.com/css/css3_gradients.asp
+https://www.w3schools.com/css/css3_shadows.asp
+https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+https://www.freecodecamp.org/news/web-layouts-use-css-grid-and-flex-to-create-responsive-webpages/
+https://www.freecodecamp.org/news/css-display-none-and-visibility-hidden-the-difference/
+https://www.freecodecamp.org/news/why-use-rem-to-set-font-size-in-css/
+https://stackoverflow.com/questions/8195215/css-background-image-on-background-color
+https://stackoverflow.com/questions/9649706/css3-box-shadow-linear-gradient
+https://openclassrooms.com/en/courses/5625816-create-modern-css-animations/5973616-use-the-transform-css-property-to-ensure-smooth-animations
+https://codepen.io/InFecT3D/pen/JQdmeL?editors=1100
+
+#Tutoriales seguidos 
+https://www.youtube.com/watch?v=Eb6yFhkzpmI&t=1818s&ab_channel=DarianSampare
+https://www.youtube.com/watch?v=Eb6yFhkzpmI&ab_channel=DarianSampare
+https://www.youtube.com/watch?v=phWxA89Dy94&ab_channel=SlayingTheDragon
+https://www.youtube.com/watch?v=EiNiSFIPIQE&t=384s&ab_channel=SlayingTheDragon
+https://www.youtube.com/watch?v=j5Oh3EawGkM&ab_channel=SlayingTheDragon
+https://www.youtube.com/watch?v=zGiirUiWslI&ab_channel=KevinPowell
+https://www.youtube.com/watch?v=MxEtxo_AaZ4&ab_channel=SlayingTheDragon
+
+#Futuras mejoras 
+https://svgartista.net/?referrer=animista
+https://animista.net/play/basic/slide-fwd/slide-fwd-right
+https://www.youtube.com/watch?v=20RmuBA1cj4&ab_channel=DuctTapeDev
+https://www.youtube.com/watch?v=fcnDBP3k3BE&ab_channel=KevinPowell
+https://www.youtube.com/watch?v=HbBMp6yUXO0
+https://www.youtube.com/watch?v=mh36Kts-wX8
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+https://lovespreadsheets.medium.com/save-web-form-data-to-a-postgres-database-without-a-backend-d2bc8455653f
+
+#Inspiración
+https://www.awwwards.com/
+
+#Animaciones JavaScript lectura
+https://www.w3schools.com/js/js_ex_dom.asp
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+https://developer.mozilla.org/en-US/docs/Web/API/SubmitEvent#examples
+https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
+https://www.w3schools.com/jsref/event_onmouseover.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event
+https://www.w3schools.com/jsref/event_onmouseleave.
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate
+https://www.w3schools.com/jsref/jsref_getday.asp
+https://www.w3schools.com/jsref/met_win_settimeout.asp
+https://www.w3schools.com/js/js_timing.asp
+https://stackoverflow.com/questions/15741006/adding-div-element-to-body-or-document-in-javascript
+https://www.w3schools.com/jsref/prop_html_id.asp
+https://www.w3schools.com/jsref/met_node_insertbefore.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
+https://stackoverflow.com/questions/1115310/how-can-i-add-a-class-to-a-dom-element-in-javascript
+https://www.w3schools.com/jsref/met_document_createelement.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+
+#Animaciones JavaScript video
+https://www.youtube.com/watch?v=h_Uv_9OxA2k&ab_channel=WebDevTutorials
+https://www.youtube.com/watch?v=r1iul4uRFuE&ab_channel=developedbyed
+https://www.youtube.com/watch?v=In0nB0ABaUk&ab_channel=WebDevSimplified
+https://www.youtube.com/watch?v=T33NN_pPeNI&ab_channel=BeyondFireship
+
+
+#Animaciones Css
+https://www.youtube.com/watch?v=w1nhwUGsG6M&ab_channel=KevinPowell
+
