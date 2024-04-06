@@ -1,304 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- <link rel="stylesheet" href="./style.css"> -->
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
-        <title>CV - Aleix Batlle Sureda</title>
+  <title>CV - Aleix Batlle Sureda</title>
 
-        <!-- Font awesome -->
-        <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/a1e2390cbb.css" crossorigin="anonymous"> -->
-        <script src="https://kit.fontawesome.com/a1e2390cbb.js" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/a1e2390cbb.css" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/a1e2390cbb.js" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <header id="page-header">
+  <header id="page-header">
 
-            <div id="page-header-img">
-                    <img src="./assets/favicon.ico" alt="" height="30px">
+    <div id="page-header-img">
+      <img src="./assets/favicon.ico" alt="" height="30px">
+    </div>
+
+    <h1 id="nav-title">abs.</h1>
+
+    <button class="boton" id="page-header-button-contactMe" onclick="window.location.href ='#quotePage3';">CONTACT
+      ME</button>
+
+  </header>
+
+  <main class='container'>
+
+
+
+    <article id='mainPage' style="">
+      <div id="mensajebienvenida"></div>
+      <!-- Sección de la página con el título, y los botones útiles -->
+      <section id="mainPage-left" style="">
+
+        <h1 id="mainPage-mainTitle">ALEIX (<span onmouseover="nombrechino1()" onmouseleave="limpieza1()">安</span><span
+            onmouseover="nombrechino2()" onmouseleave="limpieza2()">林</span><span onmouseover="nombrechino3()"
+            onmouseleave="limpieza3()">时</span>) <br> BATLLE SUREDA</h1>
+
+        <h2 id="mainPage-description">GIS DEVELOPER</h2>
+
+        <div id='mainPage-buttons'>
+
+          <button class="boton" id="mainPage-buttons-btn1" onclick="window.location.href ='#quotePage1';"><i
+              class="fa-regular fa-compass"></i> ABOUT ME</button>
+
+          <button class="boton" id="mainPage-buttons-btn2" onclick="window.location.href ='#quotePage2';"><i
+              class="fa-regular fa-folder"></i> PROJECTS</button>
+
+        </div>
+
+      </section>
+      <!-- Seccion derecha de la página principal(una imagen svg o una animación con svg¿?) -->
+      <section id="mainPage-right" style="">
+
+        <div>
+          <a href="./assets/(ES)_CV_Aleix_Batlle_Sureda.pdf" download="CV_Aleix_Batlle_Sureda">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png" alt=""
+              id="mainPage-right-bg-img" onmouseover="sabermasdemi()" onmouseleave="limpieza()">
+          </a>
+        </div>
+
+      </section>
+
+    </article>
+    <!-- Comentario  -->
+    <article class="quotePage" id="quotePage1" style="">
+
+      <p id="quotePage-intro"> De formación geógrafo con gran interés en el
+        análisis espacial <b>GIS</b> para optimizar la
+        captación, uso y redistribución
+        de recursos en las sociedades
+        humanas. Creo en el orden, la
+        estrategia y la planificación
+        para alcanzar <b>los objetivos
+          marcados</b> . </p>
+
+
+    </article>
+
+    <section id="resume-title-section">
+
+      <h1 id="resumePage-Title">TRAYECTORIA</h1>
+
+      <a href="./assets/(ES)_CV_Aleix_Batlle_Sureda_compressed.pdf" download="CV_Aleix_Batlle">
+        <button class="boton" id="quotePage-resume-btn"><i class="fa-solid fa-download"></i> RESUME / CV</button>
+      </a>
+
+
+    </section>
+
+    <!-- Currículum en formato timeline -->
+    <!-- Falta retocar la animación de "flip card" -->
+    <article id="resumePage" style="">
+
+      <section id="timeline">
+
+        <div class="timeline">
+          <div class="timeline-container right hidden">
+            <div class="content hidden" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2023</h2>
+                <h4>DECABA</h4>
+                <P>Consultor en desarrollo local</P>
+                <h4>ESRI</h4>
+                <p>- Máster en Sistemas de Información Geográfica</p>
+                <h5>Proyectos Personales</h5>
+                <p>- Voluntariado en SOS Costa Brava</p>
+                <p>- Voluntariado en United Nations maps</p>
+              </div>
             </div>
-
-            <h1 id="nav-title">abs.</h1>
-
-            <button class="boton" id="page-header-button-contactMe" onclick="window.location.href ='#quotePage3';">CONTACT ME</button>
-
-        </header>
-
-        <main class='container'>
-
-         
-
-            <article id ='mainPage' style="">
-              <div id="mensajebienvenida"></div>
-                <!-- Sección de la página con el título, y los botones útiles -->
-                <section id ="mainPage-left"  style="">
-
-                    <h1 id="mainPage-mainTitle" >ALEIX  (<span onmouseover="nombrechino1()" onmouseleave="limpieza1()">安</span><span onmouseover="nombrechino2()" onmouseleave="limpieza2()">林</span><span onmouseover="nombrechino3()" onmouseleave="limpieza3()">时</span>) <br> BATLLE SUREDA</h1>
-
-                    <h2 id ="mainPage-description">GIS DEVELOPER</h2>
-
-                    <div id ='mainPage-buttons'>
-
-                        <button class="boton" id="mainPage-buttons-btn1" onclick="window.location.href ='#quotePage1';"><i class="fa-regular fa-compass"></i>   ABOUT ME</button>
-
-                        <button class="boton" id="mainPage-buttons-btn2" onclick="window.location.href ='#quotePage2';"><i class="fa-regular fa-folder"></i>   PROJECTS</button>
-
-                    </div>
-
-                </section>
-                <!-- Seccion derecha de la página principal(una imagen svg o una animación con svg¿?) -->
-                <section id ="mainPage-right" style="">
-                    
-                    <div>
-                      <a href="./assets/(ES)_CV_Aleix_Batlle_Sureda.pdf" download="CV_Aleix_Batlle_Sureda">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png" alt="" id="mainPage-right-bg-img" onmouseover="sabermasdemi()" onmouseleave="limpieza()"> 
-                      </a>
-                    </div>
-
-                </section>
-
-            </article>
-            <!-- Comentario  -->
-            <article class ="quotePage" id="quotePage1" style="">
-
-                <p id="quotePage-intro"> De formación geógrafo con gran interés en el
-                    análisis espacial <b>GIS</b> para optimizar la
-                    captación, uso y redistribución
-                    de recursos en las sociedades
-                    humanas. Creo en el orden, la
-                    estrategia y la planificación
-                    para alcanzar <b>los objetivos
-                    marcados</b> . </p>
-
-             
-            </article>
-
-            <section id="resume-title-section">
-
-              <h1 id="resumePage-Title">TRAYECTORIA</h1>
-
-              <a  href="./assets/(ES)_CV_Aleix_Batlle_Sureda.pdf" download="CV_Aleix_Batlle">
-              <button class="boton" id="quotePage-resume-btn"><i class="fa-solid fa-download"></i>  RESUME / CV</button>
-              </a>
-
-
-            </section>
-
-            <!-- Currículum en formato timeline -->
-<!-- Falta retocar la animación de "flip card" -->
-            <article id="resumePage" style="">
-
-                <section id="timeline">
-
-                    <div class="timeline">
-                        <div class="timeline-container right hidden">
-                          <div class="content hidden" id="contenido">
-                            <div class="tarjeta hidden">
-                              <h2>2023</h2>
-                              <h4>DECABA</h4>
-                              <P>Consultor en desarrollo local</P>
-                              <h4>ESRI</h4>
-                              <p>- Máster en Sistemas de Información Geográfica</p>
-                              <h5>Proyectos Personales</h5>
-                              <p>- Voluntariado en SOS Costa Brava</p>
-                              <p>- Voluntariado en United Nations maps</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timeline-container left hidden">
-                          <div class="content hidden" id="contenido">
-                            <div class="tarjeta hidden">
-                                <h2>2022</h2>
-                                <h4>Universitat Oberta de Catalunya</h4>
-                                <p>- Máster en Ciudad y Urbanismo </p>
-                                <h4>Ayuntamiento de Palafrugell</h4>
-                                <p> - Técnico de medioambiente </p>
-                                <h4>DECABA</h4>
-                                 - Consultor en desarrollo local </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timeline-container right hidden">
-                          <div class="content hidden" id="contenido">
-                            <div class="tarjeta hidden">
-                              <h2>2021</h2>
-                              <h4>Barcelona Regional</h4>
-                              <p>- Técnico en proyectos de Desarrollo local</p>
-                              <h5>Formación</h5>
-                              <p>- Curso intensivo de chino aplicado al mundo empresarial</p>
-                              <h5>Proyectos Personales</h5>
-                              <p>- Voluntariado en SOS Costa Brava</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timeline-container left hidden">
-                          <div class="content hidden" id="contenido">
-                            <div class="tarjeta hidden">
-                              <h2>2020</h2>
-                              <h4>Agencia AVI</h4>
-                              <p>- Agente Inmobiliario</p>
-                              <h5>Formación</h5>
-                              <p>- Iniciación a Python (20h)</p>
-                              <p>- Curso iniciación a la Programación</p>
-                              <p>- Curso de Gestión de Fondos Europeos</p>
-                              <h5>Proyectos Personales</h5>
-                              <p>- Creación de una Página Web de ticketing</p>
-                            </div>                            
-                          </div>
-                        </div>
-                        <div class="timeline-container right hidden">
-                          <div class="content hidden" id="contenido">
-                            <div class="tarjeta hidden">
-                              <h2>2019</h2>
-                              <h4>Agencia AVI</h4>
-                              <p>- Agente Inmobiliario</p>
-                              <h5>Formación</h5>
-                              <p>- Curso iniciación a Python (20h)</p>
-                              <h5>Proyectos Personales</h5>
-                              <p>- Licencia de Operador de Drones certificado oficial AESA</p>
-                            </div>                            
-                          </div>
-                        </div>
-                        <div class="timeline-container left hidden">
-                          <div class="content" id="contenido">
-                            <div class="tarjeta hidden">
-                              <h2>2017</h2>
-                              <h4>Consorci del Ter</h4>
-                              <p>- Técnico Forestal</p>
-                              <h5>Formación</h5>
-                              <p>- Curso de Inglés avanzado (C1)</p>
-                              <h5>Proyectos Personales</h5>
-                              <p>- Creación de un equip de futbol universitario</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timeline-container right hidden">
-                          <div class="content" id="contenido">
-                            <div class="tarjeta hidden">
-                              <h2>2014</h2>
-                              <h4>Universidad de Girona</h4>
-                              <p>- Grado de Geografía, ordenación del territorio y gestión del medio ambiente.</p>
-                              <h5>Proyectos Personales</h5>
-                              <p>- Fundación de una asociación de juegos de mesa</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-        
-                    
-
-                </section>
-
-            </article>
-
-            <!-- comentario -->
-            <article id="quotePage2" class ='quotePage'>
-
-              <p id="quotePage-intro"> Todas las cosas están relacionadas entre si, pero las cosas más cercanas en el espacio tienen mayor relación que las lejanas. <br> <span style="font-weight: bolder; font-size: medium;">Waldo Tobler</span> <span style="font-size: medium;">Primera ley de la geográfia</span></p>
-
-            </article>
-
-          <!-- Proyectos personales -->
-
-          <!-- Sección del título de Proyectos -->
-
-          <section id="projects-title-section">
-            <div>
-                <h1 id="pojects-container-title">PROYECTOS</h1>
-            </div>
-            <div> 
-              <button class="boton" id="projectsButton" onclick="window.open('https://github.com/Aleixbs')"><i class="fa-brands fa-github-square"></i> GITHUB</button>
-            </div>
-
-          </section>
-
-            <!-- Sección Principal de Proyectos -->
-<!-- Falta reordenar el tamaño de las imagenes de fondo -->
-          <div id="projectsPage">
-            <div class="project-large1 project">
-              <h1 class="project-title">Mapa en 3D usando Blender y ArcGIS pro</h1>
-              <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum illum ipsam adipisci architecto, quibusdam a debitis aperiam magni ut molestias quasi dolores in necessitatibus quaerat quisquam repudiandae maxime minima?</p>
-            </div>
-            <div class="project-small1 project">
-              <h1 class="project-title" >Mapa del NVDI de Pirineos con imágenes satélite de Landsat-7</h1>
-              <p class="project-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio accusamus aliquam aut omnis dicta deleniti illum eaque harum exercitationem?<span style="padding-left:5px"><button onclick="leerMas()" id="botonMasMenos" style="position: relative; border-radius: 5px;">Leer Mas</button> </span><span id="puntos">...</span> <span id="masTexto" style="padding-left:5px"> </span></p>
-
-            </div>
-            <div class="project-small2 project">
-              <h1 class="project-title">Mapa kernel density sobre la afluencia en las calles de Madrid</h1>
-              <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe laboriosam id repudiandae ipsa,<span style="padding-left:5px"><button onclick="leerMas2()" id="botonMasMenos2" style="position: relative; border-radius: 5px;">Leer Mas</button> </span><span id="puntos">...</span> <span id="masTexto2" style="padding-left:5px"></span></p>
-            </div>
-            <div class="project-large2 project">
-              <h1 class="project-title">Ánalisis econométrico sobre la desigualdad entre municipios rurales y urbanos en el litoral catalán</h1>
-              <p class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, at. Quia voluptate, pariatur suscipit dolorem eius, labore reprehenderit nobis voluptatibus in ratione temporibus, laboriosam ducimus sapiente beatae placeat aliquid nulla.</p>
-            </div>
-
-
           </div>
-
-          <!-- Skills / comentario-->
-
-          <article id="quotePage3" class ='quotePage'>
-
-            <h1 id="skills-title">SKILLS</h1>
-
-                <section id="skills-software">
-                  <p class="skills-text">ArcGIS <br> Qgis <br> Google Earth Engine <br> Microsoft Excel <br> Microsoft Power BI 
-                  </p>
-                </section>
-
-                <section id="skills-software2">
-                  <p class="skills-text">Python <br> Html/Css <br> Javascript <br> Dojo Toolkit <br> Tableau </p>
-                </section>
-
-
-          </article>
-
-
-            <!-- Contacto -->
-          
-          <section id="projects-title-section">
-            <div>
-                  <h1 id="pojects-container-title">CONTACTO</h1>
+          <div class="timeline-container left hidden">
+            <div class="content hidden" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2022</h2>
+                <h4>Universitat Oberta de Catalunya</h4>
+                <p>- Máster en Ciudad y Urbanismo </p>
+                <h4>Ayuntamiento de Palafrugell</h4>
+                <p> - Técnico de medioambiente </p>
+                <h4>DECABA</h4>
+                - Consultor en desarrollo local </p>
+              </div>
             </div>
-            <div> 
-                <button class="boton" id="projectsButton" onclick="location.href='mailto:aleixbatlle@gmail.com'"><i class="fa-regular fa-envelope"></i> EMAIL</button>
-
-                <button class="boton" id="projectsButton" onclick="window.open('https://www.linkedin.com/in/aleixbatllesureda')"><i class="fa fa-linkedin-square"></i> LINKEDIN</button>
-
+          </div>
+          <div class="timeline-container right hidden">
+            <div class="content hidden" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2021</h2>
+                <h4>Barcelona Regional</h4>
+                <p>- Técnico en proyectos de Desarrollo local</p>
+                <h5>Formación</h5>
+                <p>- Curso intensivo de chino aplicado al mundo empresarial</p>
+                <h5>Proyectos Personales</h5>
+                <p>- Voluntariado en SOS Costa Brava</p>
+              </div>
             </div>
-  
-          </section>
+          </div>
+          <div class="timeline-container left hidden">
+            <div class="content hidden" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2020</h2>
+                <h4>Agencia AVI</h4>
+                <p>- Agente Inmobiliario</p>
+                <h5>Formación</h5>
+                <p>- Iniciación a Python (20h)</p>
+                <p>- Curso iniciación a la Programación</p>
+                <p>- Curso de Gestión de Fondos Europeos</p>
+                <h5>Proyectos Personales</h5>
+                <p>- Creación de una Página Web de ticketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-container right hidden">
+            <div class="content hidden" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2019</h2>
+                <h4>Agencia AVI</h4>
+                <p>- Agente Inmobiliario</p>
+                <h5>Formación</h5>
+                <p>- Curso iniciación a Python (20h)</p>
+                <h5>Proyectos Personales</h5>
+                <p>- Licencia de Operador de Drones certificado oficial AESA</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-container left hidden">
+            <div class="content" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2017</h2>
+                <h4>Consorci del Ter</h4>
+                <p>- Técnico Forestal</p>
+                <h5>Formación</h5>
+                <p>- Curso de Inglés avanzado (C1)</p>
+                <h5>Proyectos Personales</h5>
+                <p>- Creación de un equip de futbol universitario</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-container right hidden">
+            <div class="content" id="contenido">
+              <div class="tarjeta hidden">
+                <h2>2014</h2>
+                <h4>Universidad de Girona</h4>
+                <p>- Grado de Geografía, ordenación del territorio y gestión del medio ambiente.</p>
+                <h5>Proyectos Personales</h5>
+                <p>- Fundación de una asociación de juegos de mesa</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <section id="contactPage">
-            
-            <input type="text" name="Nombre" id="contactPage-name" placeholder="Nombre">
-            <input type="text" name="" id="contactPage-asunto" placeholder="Asunto">
-            <input type="email" name="" id="contactPage-mail" placeholder="Mail">
-            <textarea id="contactPage-textarea" placeholder="Texto"></textarea>
-            <button type="button" value="ENVIAR" id="contactPage-submit" class="boton" onclick="verificacion()">Enviar</button>
-          </section>
-          <section id="resultadoVerificacion">
 
-          </section>
 
-        </main>
+      </section>
 
-        <!-- Sección de footer enganchada al margen inferior de la página -->
-        <footer>
-          <p style="color:white"> copyright 2023    <span style="color:grey; padding: 0 2rem;">Made with vanilla Html5/Css3</span>     Aleix Batlle Sureda </p>
-        </footer>
+    </article>
 
-        <script src="./main.js"></script>
+    <!-- comentario -->
+    <article id="quotePage2" class='quotePage'>
 
-    </body>
+      <p id="quotePage-intro"> Todas las cosas están relacionadas entre si, pero las cosas más cercanas en el espacio
+        tienen mayor relación que las lejanas. <br> <span style="font-weight: bolder; font-size: medium;">Waldo
+          Tobler</span> <span style="font-size: medium;">Primera ley de la geográfia</span></p>
+
+    </article>
+
+    <!-- Proyectos personales -->
+
+    <!-- Sección del título de Proyectos -->
+
+    <section id="projects-title-section">
+      <div>
+        <h1 id="pojects-container-title">PROYECTOS</h1>
+      </div>
+      <div>
+        <button class="boton" id="projectsButton" onclick="window.open('https://github.com/Aleixbs')"><i
+            class="fa-brands fa-github-square"></i> GITHUB</button>
+      </div>
+
+    </section>
+
+    <!-- Sección Principal de Proyectos -->
+    <!-- Falta reordenar el tamaño de las imagenes de fondo -->
+    <div id="projectsPage">
+      <div class="project-large1 project">
+        <h1 class="project-title">Mapa en 3D usando Blender y ArcGIS pro</h1>
+        <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum illum
+          ipsam adipisci architecto, quibusdam a debitis aperiam magni ut molestias quasi dolores in necessitatibus
+          quaerat quisquam repudiandae maxime minima?</p>
+      </div>
+      <div class="project-small1 project">
+        <h1 class="project-title">Mapa del NVDI de Pirineos con imágenes satélite de Landsat-7</h1>
+        <p class="project-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio accusamus aliquam
+          aut omnis dicta deleniti illum eaque harum exercitationem?<span style="padding-left:5px"><button
+              onclick="leerMas()" id="botonMasMenos" style="position: relative; border-radius: 5px;">Leer Mas</button>
+          </span><span id="puntos">...</span> <span id="masTexto" style="padding-left:5px"> </span></p>
+
+      </div>
+      <div class="project-small2 project">
+        <h1 class="project-title">Mapa kernel density sobre la afluencia en las calles de Madrid</h1>
+        <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe laboriosam id
+          repudiandae ipsa,<span style="padding-left:5px"><button onclick="leerMas2()" id="botonMasMenos2"
+              style="position: relative; border-radius: 5px;">Leer Mas</button> </span><span id="puntos">...</span>
+          <span id="masTexto2" style="padding-left:5px"></span>
+        </p>
+      </div>
+      <div class="project-large2 project">
+        <h1 class="project-title">Ánalisis econométrico sobre la desigualdad entre municipios rurales y urbanos en el
+          litoral catalán</h1>
+        <p class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, at. Quia voluptate,
+          pariatur suscipit dolorem eius, labore reprehenderit nobis voluptatibus in ratione temporibus, laboriosam
+          ducimus sapiente beatae placeat aliquid nulla.</p>
+      </div>
+
+
+    </div>
+
+    <!-- Skills / comentario-->
+
+    <article id="quotePage3" class='quotePage'>
+
+      <h1 id="skills-title">SKILLS</h1>
+
+      <section id="skills-software">
+        <p class="skills-text">ArcGIS <br> Qgis <br> Google Earth Engine <br> Microsoft Excel <br> Microsoft Power BI
+        </p>
+      </section>
+
+      <section id="skills-software2">
+        <p class="skills-text">Python <br> Html/Css <br> Javascript <br> Dojo Toolkit <br> Tableau </p>
+      </section>
+
+
+    </article>
+
+
+    <!-- Contacto -->
+
+    <section id="projects-title-section">
+      <div>
+        <h1 id="pojects-container-title">CONTACTO</h1>
+      </div>
+      <div>
+        <button class="boton" id="projectsButton" onclick="location.href='mailto:aleixbatlle@gmail.com'"><i
+            class="fa-regular fa-envelope"></i> EMAIL</button>
+
+        <button class="boton" id="projectsButton"
+          onclick="window.open('https://www.linkedin.com/in/aleixbatllesureda')"><i class="fa fa-linkedin-square"></i>
+          LINKEDIN</button>
+
+      </div>
+
+    </section>
+
+    <section id="contactPage">
+
+      <input type="text" name="Nombre" id="contactPage-name" placeholder="Nombre">
+      <input type="text" name="" id="contactPage-asunto" placeholder="Asunto">
+      <input type="email" name="" id="contactPage-mail" placeholder="Mail">
+      <textarea id="contactPage-textarea" placeholder="Texto"></textarea>
+      <button type="button" value="ENVIAR" id="contactPage-submit" class="boton"
+        onclick="verificacion()">Enviar</button>
+    </section>
+    <section id="resultadoVerificacion">
+
+    </section>
+
+  </main>
+
+  <!-- Sección de footer enganchada al margen inferior de la página -->
+  <footer>
+    <p style="color:white"> copyright 2023 <span style="color:grey; padding: 0 2rem;">Made with vanilla
+        Html5/Css3</span> Aleix Batlle Sureda </p>
+  </footer>
+
+  <script src="./main.js"></script>
+
+</body>
 
 </html>
